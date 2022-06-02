@@ -171,7 +171,7 @@ $(document).ready(function() {
 
 
 
-$("#section0").vegas({
+$("#section-bg-1").vegas({
     transition: 'slideUp',
     // transitionDuration: 4000,
     timer: false,
@@ -195,7 +195,7 @@ $("#section0").vegas({
     ]
 });
 
-$("#section1").vegas({
+$("#section-bg-2").vegas({
     transition: 'slideUp',
     // transitionDuration: 4000,
     timer: false,
@@ -219,7 +219,7 @@ $("#section1").vegas({
     ]
 });
 
-$("#section2").vegas({
+$("#section-bg-3").vegas({
     transition: 'slideUp',
     // transitionDuration: 4000,
     timer: false,
@@ -241,6 +241,22 @@ $("#section2").vegas({
         }
 
     ]
+});
+
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
 });
 
 
