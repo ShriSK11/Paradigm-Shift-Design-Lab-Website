@@ -27,6 +27,31 @@
 </head>
 <body>
 
+    <div class="preloader-bg animated"></div>
+		<div id="preloader">
+			<div id="preloader-status">
+				<div class="preloader-position">
+					<div class="busy-loader">
+						<div class="w-ball-wrapper ball-1">
+							<div class="w-ball"></div>
+						</div>
+						<div class="w-ball-wrapper ball-2">
+							<div class="w-ball"></div>
+						</div>
+						<div class="w-ball-wrapper ball-3">
+							<div class="w-ball"></div>
+						</div>
+						<div class="w-ball-wrapper ball-4">
+							<div class="w-ball"></div>
+						</div>
+						<div class="w-ball-wrapper ball-5">
+							<div class="w-ball"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- preloader end -->
+
 	<header id="header" role="banner">
         <div id="header-inner">
             <a itemprop="url" class="header-logo-link"
@@ -144,8 +169,8 @@
             <!-- content wrapper start -->
             <div class="content-wrapper">
                 <!-- introduction start -->
-                <div class="left-1-content">
-                    <h2 class="content-title">Architecture</h2>
+                <div class="left-content">
+                    <h2 class="content-title">Modern Architecture</h2>
                     <p class="content-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     <a class="explore-button-text" href="comingsoon.html" target="_self">
                         <span class="bg"></span><span class="explore-button"><svg
@@ -213,7 +238,7 @@
               <!-- content wrapper start -->
               <div class="content-wrapper">
                   <!-- introduction start -->
-                  <div class="right-2-content">
+                  <div class="right-content">
                       <h2 class="content-title">Interior Design</h2>
                       <p class="content-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                       <a class="explore-button-text" href="comingsoon.html" target="_self">
@@ -241,7 +266,7 @@
             <!-- content wrapper start -->
             <div class="content-wrapper">
                 <!-- introduction start -->
-                <div class="right-2-content">
+                <div class="right-content">
                     <h2 class="content-title">Dhi-Wiser</h2>
                     <p class="content-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     <a class="explore-button-text" href="comingsoon.html" target="_self">
@@ -268,9 +293,9 @@
         <div id="section-bg-1">
 
         </div>
+        <div class="m-overlay-section"></div>
         <div class="m-content-wrapper">
-            <!-- <div class="m-overlay-section"></div> -->
-            <h2 class="m-section-title">Architecture</h2>
+            <h2 class="m-section-title">Modern Architecture</h2>
         <p class="m-section-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         <a class="explore-button-text" href="comingsoon.html" target="_self">
             <span class="bg"></span><span class="explore-button"><svg
@@ -292,8 +317,9 @@
         <div id="section-bg-2">
             
         </div>
+        <div class="m-overlay-section"></div>
         <div class="m-content-wrapper">
-            <!-- <div class="m-overlay-section"></div> -->
+            
             <h2>Interior Design</h2>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
@@ -315,8 +341,9 @@
         <div id="section-bg-3">
             
         </div>
+        <div class="m-overlay-section"></div>
         <div class="m-content-wrapper">
-            <!-- <div class="m-overlay-section"></div> -->
+            
             <h2>Dhi-Wiser</h2>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             <a class="explore-button-text" href="comingsoon.html" target="_self">
@@ -335,13 +362,20 @@
     </div>
 </div>
 
-<div class="footer-opener">
+
+    <!-- <div class="footer-opener">
 	<a href="#header">
 		<span class="fTab"></span>
 	</a>
-</div>
+    </div> -->
 
 <footer id="footer">
+    <div class="footer-opener"  onClick="changeHeight();" >
+        <a href="#header">
+            <span class="fTab"></span>
+        </a>
+        </div>
+    
     <div id="footer-top-area">
         <div id="footer-top-area-inner" class="content-grid">
             <div
@@ -496,12 +530,36 @@ crossorigin="anonymous"></script>
 
 
 
-<script>
+<!-- <script>
 	jQuery(function($){
     $('.footer-opener').on('click', function(){
         $(this).toggleClass('active');
     });
 })
+</script> -->
+
+
+
+
+
+<script>
+    function resetfooter(){
+        document.getElementById('footer').style.backgroundColor = "#ffffff00"
+    }
+</script>
+
+
+
+
+<script>
+function changeHeight() {
+    var x = document.getElementById("footer");
+    if (x.style.maxHeight === "50px") {
+      x.style.maxHeight = "100%";
+    } else {
+      x.style.maxHeight = "50px";
+    }
+  }
 </script>
 
 
