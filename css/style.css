@@ -313,6 +313,7 @@ li{
         transform: translate(-5%, -50%);
         z-index: 2;
         transition: all 0.7s ease;
+        /* padding: 2vh 2vw; */
     }
     .nav-links{
         position: fixed;
@@ -388,7 +389,7 @@ li{
 }
 .m-logo img {
     /* height: 5rem; */
-    width: 5rem;
+    width: 7rem;
 }
 
 .nav-links{
@@ -447,12 +448,18 @@ li{
 
 /*Styling Hamburger Icon*/
 .hamburger div{
-    width: 30px;
-    height:3px;
+    width: 8vw;
+    height: 0.5vh;
     background: #1e1e1e;
-    margin: 5px;
+    margin: 1vh 0 1vh 0;
     transition: all 0.3s ease;
+
 }
+
+.hamburger .line1{
+    margin-top: 4vh;
+}
+
 
 
 
@@ -579,7 +586,7 @@ h2 {
         color: #ffffff;
         border: 1px solid transparent;
         background-color: transparent !important;
-        margin-top: 31px;
+        /* margin-top: 31px; */
         /* background-color: #f0f0f0; */
         height: auto !important;
         position: relative;
@@ -785,6 +792,48 @@ body {
     max-width: 100%!important;
 }}
 
+
+@media only screen and (max-width: 800px){
+    #footer .footer-opener a{
+        padding: 4% 6% 4% 6% !important;
+    }}
+
+@media only screen and (max-width: 1024px){
+    .grid-item h6{
+        color: #000000;
+        font-family: "DM Sans";
+        font-size: 30px;
+        line-height: 22px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .grid-item p{
+        margin-bottom: 0px;
+        margin: 10px 0;
+        font-family: "DM Sans";
+        font-size: 25px !important;
+    }
+
+    .wp-block-social-links, .wp-block-social-links.has-normal-icon-size {
+        font-size: 40px !important;
+    }
+
+
+
+}
+
+    
+
+
+
+
+
+
 footer {
     display: block;
     position: relative;
@@ -793,7 +842,7 @@ footer {
     bottom: 0;
     /* height: 300px; */
     width: 100%;
-    z-index: 9;
+    z-index: 200;
     background-color: #4c4c4c;
     -webkit-transition: max-height 0.5s;
     transition: max-height 0.5s;
@@ -824,7 +873,7 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     width: 5% !important;
-    
+    z-index: 200;
 }
 
 .footer-opener:hover{
@@ -976,6 +1025,14 @@ p{
     margin-bottom: 0px;
     margin: 10px 0;
     font-family: "DM Sans";
+    font-size: 20px;
+}
+
+.grid-item p {
+    margin-bottom: 0px;
+    margin: 10px 0;
+    font-family: "DM Sans";
+    font-size: 15px;
 }
 
 a, p a {
@@ -1004,7 +1061,7 @@ a:hover, p a:hover, a:focus, p a:focus{
 }
 
 .wp-block-social-links, .wp-block-social-links.has-normal-icon-size {
-    font-size: 24px;
+    font-size: 25px;
 }
 
 .widget ul {
