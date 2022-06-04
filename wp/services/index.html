@@ -12,6 +12,13 @@
 	<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
 
     <script src="https://kit.fontawesome.com/b2e3add3ca.js" crossorigin="anonymous"></script>
+	<script>
+		function remove_css_js_version( $src ) {
+    if( strpos( $src, '?ver=' ) )
+        $src = remove_query_arg( 'ver', $src );
+    return $src;
+}
+	</script>
 
 	<style type="text/css">
 		img.wp-smiley,
@@ -2097,7 +2104,8 @@
 															<span class="qodef-m-text">Get in touch</span>
 															<span class="qodef-m-icon ">
 																<span class="qodef-m-icon-inner">
-																	<i class="fa-solid fa-arrow-right"></i></span>
+																	<i aria-hidden="true"
+																		class="fas fa-location-arrow"></i> </span>
 															</span>
 														</a>
 													</div>
@@ -2711,7 +2719,7 @@
 				"admin-top-bar": true
 			},
 			"urls": {
-				"assets": "wp\/wp-content\/plugins\/elementor\/assets\/"
+				"assets": "\/projects\/psdl\/wp\/wp-content\/plugins\/elementor\/assets\/"
 			},
 			"settings": {
 				"page": [],
@@ -2734,7 +2742,10 @@
 				"featuredImage": false
 			}
 		};
+
+	
 	</script>
+	<script src="../wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js"></script>
 	<script type='text/javascript' src='../wp-content/plugins/elementor/assets/js/frontend.min3ab2.js'
 		id='elementor-frontend-js'></script>
 	<script type='text/javascript' src='../wp-includes/js/dist/hooks.mincbb5.js'
@@ -2760,6 +2771,40 @@
 					.test(t.tagName) || (t.tabIndex = -1), t.focus())
 			}, !1);
 	</script>
+
+	<!-- <script>
+		
+		var mySwiper = new Swiper ('.qodef-qi-swiper-container', 
+	{
+    speed:1000,
+		direction: 'horizontal',
+		navigation: 
+		{
+		  nextEl: '.swiper-button-next',
+		  prevEl: '.swiper-button-prev',
+		},
+		pagination: 
+		{
+			el: '.swiper-pagination',
+			dynamicBullets: true,
+		},
+		zoom: true,
+		keyboard: 
+		{
+			enabled: true,
+			onlyInViewport: false,
+		},
+		mousewheel: 
+		{
+			invert: true,
+		},
+    autoplay: 
+    {
+      delay: 2000,
+    },
+    loop: true,
+	}); 
+	</script> -->
 </body>
 
 
