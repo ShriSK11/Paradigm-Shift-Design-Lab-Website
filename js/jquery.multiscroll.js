@@ -1,13 +1,12 @@
-/*!
- * multiscroll.js 0.2.3
+/**
+ * multiscroll.js 0.1.6 Beta
  * https://github.com/alvarotrigo/multiscroll.js
+ * MIT licensed
  *
- * @license
- * Get a multiScroll.js Commercial License for commercial use
- * https://alvarotrigo.com/multiScroll/pricing/
- *
- * Copyright (C) 2018 http://alvarotrigo.com/multiScroll/ - A project by Alvaro Trigo
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
+
+
 (function($, window, document, Math, undefined) {
 
     $.fn.multiscroll = function(options) {
@@ -82,8 +81,6 @@
             touchstart: 'ontouchstart' in window ? 'touchstart' :  MSPointer.down
         };
 
-        //only once my friend!
-        displayWarnings();
 
         //timeouts
         var resizeId;
@@ -1008,26 +1005,6 @@
                 .on('mouseenter', '#multiscroll-nav li', navMouseEnterHandler)
                 .on('mouseleave', '#multiscroll-nav li', navMouseLeaveHandler)
                 .on('click', '#multiscroll-nav a', navClickHandler);
-        };
-
-        /**
-        * Displays warnings
-        */
-         function displayWarnings(){
-            var l = options['li' + 'c' + 'enseK' + 'e' + 'y'];
-            var msgStyle = 'font-size: 15px;background:yellow;';
-
-            if(!isOK){
-                showError('error', 'multiScroll.js version 0.2.3 has changed its license to GPLv3 and it requires a `licenseKey` option. Read about it here:');
-                showError('error', 'https://github.com/alvarotrigo/multiScroll.js#options');
-            }
-        }
-
-        /**
-        * Shows a message in the console of the given type.
-        */
-        function showError(type, text){
-            window.console && window.console[type] && window.console[type]('multiScroll: ' + text);
-        }
+        };       
     };
 })(jQuery, window, document, Math);
