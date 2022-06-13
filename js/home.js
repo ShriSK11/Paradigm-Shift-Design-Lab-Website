@@ -23,6 +23,10 @@
             anchors: ['first', 'second', 'third'],
             menu: '#menu',
             css3: true,
+            navigation: true,
+            navigationTooltips: ['Architecture', 'Interior Design', 'Dhi Wiser'],
+            loopBottom: true,
+
 
             //equivalent to jQuery `easeOutBack` extracted from http://matthewlein.com/ceaser/
             easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
