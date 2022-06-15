@@ -20,12 +20,10 @@
 
     $(document).ready(function () {
         $('#myContainer').multiscroll({
-            anchors: ['first', 'second', 'third'],
-            menu: '#menu',
             css3: true,
             navigation: true,
             navigationTooltips: ['Architecture', 'Interior Design', 'Dhi Wiser'],
-            loopBottom: true,
+            loopBottom: false,
 
 
             //equivalent to jQuery `easeOutBack` extracted from http://matthewlein.com/ceaser/
@@ -80,6 +78,32 @@
             ]
         });
 
+
+        $("#left-bg-3").vegas({
+            transition: 'slideUp',
+            // transitionDuration: 4000,
+            timer: false,
+            delay: 5000,
+            cover: true,
+            align: 'center',
+            valign: 'right',
+            // animation: 'random',
+            // animationDuration: 20000,
+            loop: true,
+            slides: [{
+                    src: 'images/3-left1.jpg'
+                },
+                {
+                    src: 'images/3-left2.jpg'
+                }
+                ,
+                {
+                    src: 'images/3-left3.jpg'
+                }
+
+            ]
+        });
+
         $("#left-bg-4").vegas({
             transition: 'slideUp',
             // transitionDuration: 4000,
@@ -101,6 +125,23 @@
                     src: 'images/4-left3.png'
                 }
 
+            ]
+        });
+
+        $("#left-bg-5").vegas({
+            transition: 'slideUp',
+            // transitionDuration: 4000,
+            timer: false,
+            delay: 5000,
+            cover: true,
+            align: 'center',
+            valign: 'right',
+            // animation: 'random',
+            // animationDuration: 20000,
+            loop: true,
+            slides: [{
+                    src: 'images/5-left1.jpg'
+                }
             ]
         });
 
@@ -153,6 +194,30 @@
             ]
         });
 
+        $("#right-bg-3").vegas({
+            transition: 'slideDown',
+            // transitionDuration: 4000,
+            timer: false,
+            delay: 5000,
+            cover: true,
+            align: 'center',
+            valign: 'right',
+            // animation: 'random',
+            // animationDuration: 20000,
+            slides: [{
+                    src: 'images/3-right1.jpg'
+                },
+                {
+                    src: 'images/3-right2.jpg'
+                }
+                ,
+                {
+                    src: 'images/3-right3.jpg'
+                }
+
+            ]
+        });
+
         $("#right-bg-4").vegas({
             transition: 'slideDown',
             // transitionDuration: 4000,
@@ -173,6 +238,23 @@
                     src: 'images/4-right3.png'
                 }
 
+            ]
+        });
+
+        $("#right-bg-5").vegas({
+            transition: 'slideUp',
+            // transitionDuration: 4000,
+            timer: false,
+            delay: 5000,
+            cover: true,
+            align: 'center',
+            valign: 'right',
+            // animation: 'random',
+            // animationDuration: 20000,
+            loop: true,
+            slides: [{
+                    src: 'images/5-right1.jpg'
+                }
             ]
         });
 
@@ -282,4 +364,7 @@ jQuery(function($){
         $(this).toggleClass('active');
     });
 })
+
+
+
 
