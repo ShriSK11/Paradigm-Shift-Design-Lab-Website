@@ -12,6 +12,37 @@ cuurentColor
 }
 
 
+/* header */
+#mobile-header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+
+}
+
+
+
+.mainMenu{
+    min-height: 100vh;
+}
+
+.m-logo img{
+    height: 6em !important;
+    width: 7em !important;
+}
+
+.menuBtn{
+    right:0;
+}
+
+
+/* footer */
+@media only screen and (max-width:1024px){
+    #footer{
+        display: none !important;
+    }
+}
+
 
 
 /* multiscroll nav */
