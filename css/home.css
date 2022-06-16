@@ -313,7 +313,7 @@ li{
   .m-logo img{
     height:3em;
     width: 4em;
-    margin: 1em 1em 1em 1em;
+    margin: 4em 1em 1em 5em;
   }
 
   nav ul{
@@ -328,7 +328,7 @@ li{
     position: absolute;
     right: 1em;
     top: 1em;
-    margin: 2em 1em 1em 1em;
+    margin: 5em 5em 1em 1em;
     z-index: 101;
     transform: scale(2.5);
   }
