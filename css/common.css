@@ -339,7 +339,7 @@ li{
     top: 1em;
     margin: 2em 1em 1em 1em;
     z-index: 101;
-    transform: scale(2);
+    transform: scale(3);
   }
   .menuBtn > span {
     background-color: #1e1e1e;
