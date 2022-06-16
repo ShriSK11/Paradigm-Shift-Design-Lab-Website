@@ -161,6 +161,10 @@ body{
     content: " ";
 }
 
+.col-xs-12{
+    width: 100%
+}
+
 
 @media only screen and (max-width:1024px){
     .left-block{
