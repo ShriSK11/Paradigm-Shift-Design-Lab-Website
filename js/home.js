@@ -30,6 +30,16 @@
             easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
         });
 
+        $('.menuBtn').click(function() {
+            $(this).toggleClass('act');
+                if($(this).hasClass('act')) {
+                    $('.mainMenu').addClass('act');
+                }
+                else {
+                    $('.mainMenu').removeClass('act');
+                }
+        });
+
         $("#left-bg-1").vegas({
             transition: 'slideUp',
             // transitionDuration: 4000,
@@ -117,13 +127,13 @@
             loop: true,
             slides: [{
                     src: 'images/4-left1.png'
+                },
+                {
+                    src: 'images/4-left2.png'
+                },
+                {
+                    src: 'images/4-left3.png'
                 }
-//                 {
-//                     src: 'images/4-left2.png'
-//                 },
-//                 {
-//                     src: 'images/4-left3.png'
-//                 }
 
             ]
         });
@@ -230,13 +240,13 @@
             // animationDuration: 20000,
             slides: [{
                     src: 'images/4-right1.png'
+                },
+                {
+                    src: 'images/4-right2.png'
+                },
+                {
+                    src: 'images/4-right3.png'
                 }
-//                 {
-//                     src: 'images/4-right2.png'
-//                 },
-//                 {
-//                     src: 'images/4-right3.png'
-//                 }
 
             ]
         });
@@ -336,19 +346,11 @@
         });
 
         window.onload = changeHeight();
-        const hamburger = document.querySelector(".hamburger");
-        const navLinks = document.querySelector(".nav-links");
-        const links = document.querySelectorAll(".nav-links li");
+        
+        $('.dropdown').click(function(){
 
-        hamburger.addEventListener('click', () => {
-            //Animate Links
-            navLinks.classList.toggle("open");
-            links.forEach(link => {
-                link.classList.toggle("fade");
-            });
-
-            //Hamburger Animation
-            hamburger.classList.toggle("toggle");
+            $('.m-submenu').toggleClass("active");
+            $('.arrow').toggleClass("rotate");
         });
 
 
