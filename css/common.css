@@ -337,7 +337,7 @@ li{
     position: absolute;
     right: 1em;
     top: 1em;
-    margin: 2sem 1em 1em 1em;
+    margin: 2em 1em 1em 1em;
     z-index: 101;
     transform: scale(2);
   }
