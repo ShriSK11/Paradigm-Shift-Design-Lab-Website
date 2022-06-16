@@ -304,7 +304,7 @@ li{
 #mobile-header {
     background-color: #fff;
     background-color: rgba(255, 255, 255, 0);
-    height: 5em;
+
   }
   .m-logo {
     max-height: 10px;
@@ -313,7 +313,6 @@ li{
   .m-logo img{
     height:3em;
     width: 4em;
-    margin: 4em 1em 1em 5em;
   }
 
   nav ul{
@@ -322,15 +321,59 @@ li{
 
 
   /* menu button */
+
+@media only screen and (max-device-width: 480px) {
+    .menuBtn{
+        transform: scale(4);
+        margin: 5em 5em 1em 1em;
+    }
+
+    .m-logo img{
+        margin: 3em 1em 1em 5em;
+    }
+ }
+ @media only screen and (device-width: 1024px) {
+    .menuBtn{
+        transform: scale(2.5);
+        margin: 4em 5em 1em 1em;
+    }
+
+    .m-logo img{
+        margin: 2em 1em 1em 3em;
+    }
+ }
+ /* different techniques for iPad screening */
+ @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    .menuBtn{
+        transform: scale(4);
+        margin: 5em 5em 1em 1em;
+        
+    }
+
+    .m-logo img{
+        margin: 3em 1em 1em 5em;
+    }
+ }  
+
+ @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    .menuBtn{
+        transform: scale(2.5);
+        margin: 4em 5em 1em 1em;
+    }
+
+    .m-logo img{
+        margin: 2em 1em 1em 3em;
+    }
+ }
+
+
   .menuBtn {
     height: 1em;
     width: 1.8em;
     position: absolute;
     right: 1em;
     top: 1em;
-    margin: 5em 5em 1em 1em;
     z-index: 101;
-    transform: scale(2.5);
   }
   .menuBtn > span {
     background-color: #1e1e1e;
