@@ -127,13 +127,13 @@
             loop: true,
             slides: [{
                     src: 'images/4-left1.png'
-                },
-                {
-                    src: 'images/4-left2.png'
-                },
-                {
-                    src: 'images/4-left3.png'
                 }
+//                 {
+//                     src: 'images/4-left2.png'
+//                 },
+//                 {
+//                     src: 'images/4-left3.png'
+//                 }
 
             ]
         });
@@ -240,13 +240,13 @@
             // animationDuration: 20000,
             slides: [{
                     src: 'images/4-right1.png'
-                },
-                {
-                    src: 'images/4-right2.png'
-                },
-                {
-                    src: 'images/4-right3.png'
                 }
+//                 {
+//                     src: 'images/4-right2.png'
+//                 },
+//                 {
+//                     src: 'images/4-right3.png'
+//                 }
 
             ]
         });
