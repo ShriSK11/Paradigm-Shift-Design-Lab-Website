@@ -119,40 +119,55 @@
     </header>
 
 
-    <header id="mobile-header" role="banner">
-        <nav class="mobile-header-navigation">
-            <div class="m-logo">
-                <img src="images/PSDL FINAL LOGO.png" alt="Logo Image">
-            </div>
-            <div class="hamburger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="wp/about-us/index.html">About Us</a></li>
-                <li><a href="wp/services/index.html">Services</a></li>
-                <li class="nav-dropdown">
-                    <a href="">Portfolio</a>
-                    <!-- <ul>
+    <header  id="mobile-header" role="banner">
+        <div class="m-logo">
+            <a href="#" class="logo"><img src="images/PSDL FINAL LOGO.png" alt="Logo Image"></a>
+        </div>
+			
+			<a href="#" class="menuBtn">
+				<span class="lines"></span>
+			</a>
+			<nav class="mainMenu">
+				<ul class="main-ul">
+					<li>
+						<a href="./index.html">Home</a>
+					</li>
+                    <li>
+						<a href="./wp/about-us/index.html">About Us</a>
+					</li>
+					<li>
+						<a href="./wp/services/index.html">Services</a>
+					</li>
+                    
+					<li class="dropdown">
+						<a href="#">Portfolio
+                            <span class="fas fa-caret-down arrow"></span>
+                        </a>
+                        <ul class="m-submenu">
                         <li class="menu-item architecture">
-                            <a href="wp/portfolio-category/architecture/index.html"><span class="menu-item-text">Architecture</span></a>
+                            <a href="./wp/portfolio-category/architecture/index.html"><span class="menu-item-text">Architecture</span></a>
                         </li>
                         <li class="menu-item architecture">
-                            <a href="wp/portfolio-category/interior-design/index.html"><span class="menu-item-text">Interior Design</span></a>
+                            <a href="./wp/portfolio-category/interior-design/index.html"><span class="menu-item-text">Interior Design</span></a>
                         </li>
                         <li class="menu-item architecture">
-                            <a href="wp/para-vishv/index.html"><span class="menu-item-text">Product Design</span></a>
+                            <a href="./wp/para-vishv/index.html"><span class="menu-item-text">Product Design</span></a>
                         </li>
-                    </ul> -->
-                </li>
-                <li><a href="wp/para-vishv/index.html">Para Vishv</a></li>
-                <li><a href="wp/dhi-wiser/index.html">Dhi-Wiser</a></li>
-                <li><button class="m-contact-button" href="wp/contact-us/index.html">Contact Us</button></li>
-            </ul>
-        </nav>
-    </header>
+                    </ul>
+					</li>
+					<li>
+						<a href="#">Para Vishv</a>
+					</li>
+                    <li>
+						<a href="#">Dhi-Wiser</a>
+					</li>
+                    <li>
+						<button class="m-contact-button" onclick="location.href='wp/contact-us/index.html'">Contact Us</button>
+					</li>
+
+				</ul>
+			</nav>
+	</header>
 
 
 <!-- <ul id="menu">
@@ -281,7 +296,7 @@
                         <h3><i class="fa fa-map-marker"></i> Main address</h3>
 
                         <p>
-                            <a class="contact-text" href="https://www.google.com/maps/place/19%C2%B013'02.1%22N+73%C2%B005'46.6%22E/@19.217236,73.096269,3398m/data=!3m1!1e3!4m5!3m4!1s0x0:0xc803fd247c36a9cb!8m2!3d19.2172361!4d73.0962687?hl=en-US" target="_blank">
+                            <a class="contact-text" href="https://goo.gl/maps/2eF6Z" target="_blank">
                             'Prathamesh', Devendra Society, Pendse Nagar, Dombivili East- 421201</a>
                         </p>
 
@@ -314,17 +329,17 @@
                             <ul>
                                 <!-- Instagram -->
                                 <li class="instagram">
-                                    <a href="https://instagram.com/paradigm_shift_design_lab?igshid=YmMyMTA2M2Y=" class="instagram-color social-media"><i class="fa fa-instagram"></i></a>
+                                    <a href="#" class="instagram-color social-media"><i class="fa fa-instagram"></i></a>
                                 </li>
 
                                 <!-- Facebook -->
                                 <li class="facebook">
-                                    <a href="https://www.facebook.com/paradigmshiftdesignlab/" class="facebook-color social-media"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="facebook-color social-media"><i class="fa fa-facebook"></i></a>
                                 </li>
 
                                 <!-- Youtube -->
                                 <li class="youtube">
-                                    <a href="https://www.youtube.com/channel/UCcXEDRwJOK7-wJAGJKualXA" class="youtube-color social-media"><i class="fa fa-youtube"></i></a>
+                                    <a href="#" class="youtube-color social-media"><i class="fa fa-youtube"></i></a>
                                 </li>
 
                                 <!-- Linkedin -->
@@ -635,7 +650,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item column 4">
                         <div id="text-13" class="widget widget_text" data-area="footer_top_area_column_4">
                             <div class="textwidget">
                                 <h6 style="margin-bottom: 0px;"><span style="color: #ffffff;">Social Media</span></p>
