@@ -127,13 +127,13 @@
             loop: true,
             slides: [{
                     src: 'images/4-left1.png'
+                },
+                {
+                    src: 'images/4-left2.png'
+                },
+                {
+                    src: 'images/4-left3.png'
                 }
-//                 {
-//                     src: 'images/4-left2.png'
-//                 },
-//                 {
-//                     src: 'images/4-left3.png'
-//                 }
 
             ]
         });
@@ -240,13 +240,13 @@
             // animationDuration: 20000,
             slides: [{
                     src: 'images/4-right1.png'
+                },
+                {
+                    src: 'images/4-right2.png'
+                },
+                {
+                    src: 'images/4-right3.png'
                 }
-//                 {
-//                     src: 'images/4-right2.png'
-//                 },
-//                 {
-//                     src: 'images/4-right3.png'
-//                 }
 
             ]
         });
@@ -321,7 +321,7 @@
             ]
         });
 
-        $("#section-bg-3").vegas({
+        $("#section-bg-4").vegas({
             transition: 'slideUp',
             // transitionDuration: 4000,
             timer: false,
@@ -337,9 +337,64 @@
                 },
                 {
                     src: 'images/4-left2.png'
+                }
+
+            ]
+        });
+
+        $("#section-bg-3").vegas({
+            transition: 'slideUp',
+            // transitionDuration: 4000,
+            timer: false,
+            delay: 5000,
+            cover: true,
+            align: 'center',
+            valign: 'right',
+            // animation: 'random',
+            // animationDuration: 20000,
+            loop: true,
+            slides: [
+                {
+                    src: 'images/3-right2.jpg'
                 },
                 {
-                    src: 'images/4-left3.png'
+                    src: 'images/3-right3.jpg'
+                }
+
+            ]
+        });
+
+        $("#section-bg-5").vegas({
+            transition: 'slideUp',
+            // transitionDuration: 4000,
+            timer: false,
+            delay: 5000,
+            cover: true,
+            align: 'center',
+            valign: 'right',
+            // animation: 'random',
+            // animationDuration: 20000,
+            loop: true,
+            slides: [{
+                    src: 'images/5-sec1.jpg'
+                }
+
+            ]
+        });
+
+        $("#section-bg-6").vegas({
+            transition: 'slideUp',
+            // transitionDuration: 4000,
+            timer: false,
+            delay: 5000,
+            cover: true,
+            align: 'center',
+            valign: 'right',
+            // animation: 'random',
+            // animationDuration: 20000,
+            loop: true,
+            slides: [{
+                    src: 'images/5-right1.jpg'
                 }
 
             ]
