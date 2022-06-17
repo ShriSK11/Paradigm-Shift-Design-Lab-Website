@@ -19,6 +19,8 @@ cuurentColor
     width: 100%;
 }
 
+
+
 #header{
     position: relative;
     display: inline-block;
@@ -288,6 +290,27 @@ li{
 
 
 /*Stying for small screens*/
+@media only screen and (max-width:1024px) {
+    #header {
+        display: none;
+    }
+}
+
+/* @media only screen and (max-width:1024px) {
+    #mobile-header {
+        display: block;
+    }
+}
+
+@media only screen and (min-width:1025px) {
+    #mobile-header {
+        display: none;
+    }
+} */
+
+
+
+/*Stying for small screens*/
 @media  screen and (min-width:1025px) {
     #mobile-header{
         display: none;
@@ -304,7 +327,7 @@ li{
 #mobile-header {
     background-color: #fff;
     background-color: rgba(255, 255, 255, 0);
-
+    height: 5em;
   }
   .m-logo {
     max-height: 10px;
@@ -313,6 +336,7 @@ li{
   .m-logo img{
     height:3em;
     width: 4em;
+    margin: 1em 1em 1em 1em;
   }
 
   nav ul{
@@ -321,59 +345,15 @@ li{
 
 
   /* menu button */
-
-@media only screen and (max-device-width: 480px) {
-    .menuBtn{
-        transform: scale(4);
-        margin: 5em 5em 1em 1em;
-    }
-
-    .m-logo img{
-        margin: 3em 1em 1em 5em;
-    }
- }
- @media only screen and (device-width: 1024px) {
-    .menuBtn{
-        transform: scale(2.5);
-        margin: 4em 5em 1em 1em;
-    }
-
-    .m-logo img{
-        margin: 2em 1em 1em 3em;
-    }
- }
- /* different techniques for iPad screening */
- @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-    .menuBtn{
-        transform: scale(4);
-        margin: 5em 5em 1em 1em;
-        
-    }
-
-    .m-logo img{
-        margin: 3em 1em 1em 5em;
-    }
- }  
-
- @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-    .menuBtn{
-        transform: scale(2.5);
-        margin: 4em 5em 1em 1em;
-    }
-
-    .m-logo img{
-        margin: 2em 1em 1em 3em;
-    }
- }
-
-
   .menuBtn {
     height: 1em;
     width: 1.8em;
     position: absolute;
     right: 1em;
     top: 1em;
+    margin: 1em 1em 1em 1em;
     z-index: 101;
+    transform: scale(1.5);
   }
   .menuBtn > span {
     background-color: #1e1e1e;
@@ -432,6 +412,7 @@ li{
     opacity: 0;
     transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transform: scale(0);
+    min-height: 100vh;
   }
   .mainMenu.act {
     opacity: 1;
@@ -512,21 +493,6 @@ li{
 
 
 
-
-
-/* header-end */
-.mainMenu{
-    min-height: 100vh;
-}
-
-.m-logo img{
-    height: 6em !important;
-    width: 7em !important;
-}
-
-.menuBtn{
-    right:0;
-}
 
 
 /* footer */
@@ -1397,14 +1363,14 @@ h2 {
         font-size: 46px;
     }
 
-    .item-title .separator {
+    .separator {
         background: #f05123;
         height: 3px;
         width: 100px;
         margin: 20px 0 30px;
     }
-
-    .item-title .separator:before {
+    
+    .separator:before {
         background: #f05123;
         content: "";
         height: 10px;
@@ -1417,8 +1383,8 @@ h2 {
         transform: rotate(45deg);
         width: 10px;
     }
-
-    .item-title .separator:after {
+    
+    .separator:after {
         background: #f05123;
         content: "";
         height: 10px;
@@ -1432,6 +1398,8 @@ h2 {
         transform: rotate(45deg);
         width: 10px;
     }
+
+    
 
     .item-title p {
         color: #1e1e1e;
@@ -1751,7 +1719,7 @@ position: relative;
     bottom: 0;
     left: 0;
     /* BG OPACITY CONTROL start */
-    background: #ffffff50;
+    background: #00000070;
     /* BG OPACITY CONTROL end */
     margin: 0;
     padding: 0;
@@ -1769,11 +1737,15 @@ position: relative;
     width: 100%!important;
     left: 0!important;
     top: 0;
-    padding: 100px 30px;
+    padding: 10% 10% 10% 10%;
+}
+
+.left-block, .right-block{
+    position: relative;
 }
 
 
-#section-bg-1, #section-bg-2, #section-bg-3{
+#section-bg-1, #section-bg-2, #section-bg-3, #section-bg-4, #section-bg-5, #section-bg-6{
     position: absolute;
         width: 100%;
         min-height: 100%;
@@ -1784,16 +1756,18 @@ position: relative;
 
 .m-content-wrapper h2{
     font-family: 'Oswald', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
-    color: #000;
-    font-size: 8vh !important;
-    line-height: 1em;
+    color: #fff;
+    font-size: 6vh !important;
+    line-height: 10vh;
     /* margin: 25px 0; */
     -ms-word-wrap: break-word;
     word-wrap: break-word;
     position: relative;
     margin-bottom: 15px;
+    letter-spacing: 2px;
+    margin: 0 -10px 0 -10px;
 }
 
 .m-content-wrapper p{
@@ -1801,6 +1775,7 @@ position: relative;
     font-size: 2.5vh;
     margin: 30px 75px 15px 75px;
     position: relative;
+    color: #fff;
 }
 
 .m-content-wrapper a{
@@ -1809,8 +1784,205 @@ position: relative;
     position: relative;
 }
 
+.left-block{
+    transform: scale(0.9);
+    margin: -30px;
+}
 
 
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+    .col-xs-12{
+        width: 100%;
+        padding: 0 0 0 0;
+        float: none;
+    }
+
+    #social-nav{
+        position: relative;
+    }
+
+    #social-nav ul li{
+        float: none;
+        display: inline-block;
+        padding: 1vh 0 0 1vh;
+        height: 6vh;
+        width: 7vh;
+    }
+
+    #social-nav ul li a{
+        font-size: 3vh;
+    }
+    
+    
+    .block-contact h3{
+        font-size: 3vh;
+        color: #fff;
+    }
+
+    .block-contact h3 i{
+        color: #fff
+    }
+    
+    #social-nav ul {
+        margin: 30px 75px 15px 75px;
+    }
+
+    .separator {
+        height: 1vh;
+        width: 33.33%;
+        margin: 40px 33.33% 30px;
+    }
+
+    .separator:before {
+        height: 2vh;
+        margin: -8px auto auto -17.67%;
+        width: 2vh;
+    }
+
+    .separator:after {
+        height: 2vh;
+        margin: -8px auto auto 0;
+        margin-left: 15.67%;
+        width: 2vh;
+    }
+
+    #contact-form .form-control{
+        font-size: 2.5vh;
+        height: 8vh;
+    
+    }
+
+    .form-group{
+        margin-bottom: 2.5vh;
+    }
+    #contact-form button#valid-form {
+        font-size: 2.5vh;
+    }
+
+    .quotations-left{
+        font-size: 3vh;
+        color: #fff;
+        margin-right: 20px;
+    }
+
+    .line-left, .line-right{
+        width: 1vh;
+    }
+
+    .fa-solid, .fa{
+    font-size: 4vh;
+    color: #fff;
+    margin: 0 1vh 0 0;
+    }
+
+    .bg{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .explore-button{
+        font-family: 'DM Sans', sans-serif;
+        font-size: 3vh;
+        color: #fff;
+        margin: 2vh 0vh 2vh 0vh;
+        display: flex;
+        text-align: center;
+
+    }
+
+    .contact-text{
+        color: #fff
+    }
+
+    ::placeholder{
+        color:#fff
+    }
+
+    .menuBtn span, .menuBtn span::before, .menuBtn span::after{
+        background-color: #fff !important;
+    }
+
+    .menuBtn.act span, .menuBtn.act span::before, .menuBtn.act span::after{
+        background-color: #1e1e1e !important;
+    }
+
+    .menuBtn{
+        height:1em;
+        width: 1.8em;
+    }
+
+    .m-logo img{
+        height: 3em;
+        width: 4em;
+    }
+
+    #mobile-header{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+    }
+}
+
+
+
+@media only screen and (max-device-width: 480px) {
+    .menuBtn{
+        transform: scale(4);
+        margin: 4em 4em 1em 1em;
+    }
+
+    .m-logo img{
+        margin: 4em 1em 1em 4em;
+        transform: scale(2);
+    }
+ }
+ @media only screen and (device-width: 1024px) {
+    .menuBtn{
+        transform: scale(2.5);
+        margin: 3em 3em 1em 1em;
+        
+    }
+
+    .m-logo img{
+        margin: 3em 1em 1em 3em;
+        transform: scale(1.5);
+    }
+ }
+ /* different techniques for iPad screening */
+ @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    .menuBtn{
+        transform: scale(4);
+        margin: 4em 4em 1em 1em;
+        
+    }
+
+    .m-logo img{
+        margin: 4em 1em 1em 4em;
+        transform: scale(2);
+    }
+ }  
+
+ @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    .menuBtn{
+        transform: scale(2.5);
+        margin: 3em 3em 1em 1em;
+    }
+
+    .m-logo img{
+        margin: 3em 1em 1em 3em;
+        transform: scale(1.5);
+    }
+ }
 /* -------------------- */
 
 @media only screen and (max-width: 880px){
