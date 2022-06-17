@@ -1196,38 +1196,6 @@ h2 {
                 padding: 2px;
             } */
 
-    .explore-button-text {
-        color: #ffffff;
-        border: 1px solid transparent;
-        background-color: transparent !important;
-        margin-top: 10px;
-        /* background-color: #f0f0f0; */
-        height: auto !important;
-        position: relative;
-        display: inline-flex;
-        vertical-align: middle;
-        font-weight: 500;
-        font-size: 17px;
-        line-height: 1.6em;
-        width: auto;
-        /* margin: 0; */
-        text-decoration: none;
-        text-transform: none;
-        border-radius: 5px;
-        /* outline: 0; */
-        font-family: 'DM Sans', sans-serif !important;
-        transition: color .2s ease-out,
-            background-color .2s ease-out,
-            border-color .2s ease-out;
-        /* background-color: transparent; */
-        z-index: 5;
-        padding: 15px 23px 17px;
-    }
-
-    .explore-button-text:hover {
-        color: #ffffff;
-    }
-
     .bg {
         position: absolute;
         top: 0;
@@ -1256,7 +1224,7 @@ h2 {
 
     .sections {
         position: relative;
-        margin: 25px auto;
+        margin: 25px auto 100px auto;
         z-index: 5;
     }
 
@@ -1730,6 +1698,8 @@ position: relative;
     align-items: center;
 }
 
+
+
 .m-content-wrapper{
     text-align: center;
     align-items: center;
@@ -1738,6 +1708,7 @@ position: relative;
     left: 0!important;
     top: 0;
     padding: 10% 10% 10% 10%;
+    z-index: 999;
 }
 
 .left-block, .right-block{
@@ -1778,17 +1749,44 @@ position: relative;
     color: #fff;
 }
 
-.m-content-wrapper a{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 2.5vh;
-    position: relative;
-}
+
 
 .left-block{
     transform: scale(0.9);
     margin: -30px;
 }
 
+
+.explore-button-text:active, .explore-button-text:focus {
+    border-color: #f05123;
+    color: #fff;
+    box-shadow: none;
+    opacity: 1;
+}
+.explore-button-text:hover {
+    border-color: #f05123;
+    color: #fff;
+    opacity: 1;
+}
+
+.explore-button-text {
+    background-color: #f05123;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    line-height: 45px;
+    padding: 2vh 4vh 2vh 4vh;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.5vh;
+}
+.explore-button-text:active, .explore-button-text:focus {
+    outline: none !important;
+    text-decoration: none !important;
+    color: #fff;
+}
 
 
 
@@ -1875,7 +1873,7 @@ position: relative;
     }
 
     .fa-solid, .fa{
-    font-size: 4vh;
+    font-size: 3vh;
     color: #fff;
     margin: 0 1vh 0 0;
     }
