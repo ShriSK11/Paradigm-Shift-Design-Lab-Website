@@ -1,3 +1,49 @@
+/* reset */
+a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+
+html, body{
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+}
+
+.page-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+
+div{
+  position: relative;
+}
+
+body{
+  background-color: #fff;
+}
+
+.page-outer{
+  position: relative;
+  overflow: auto;
+}
+
+.page-inner{
+  overflow: auto;
+}
+
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -145,7 +191,7 @@ ul{
 
 
 .header-navigation ul li > .sub-menu {
-    background-color: #ffffff;
+    background-color: #fff;
 
 }
 
@@ -498,7 +544,12 @@ li{
             width: 1300px;
     }} */
 
-    @media only screen and (max-width: 1024px){
+    @media only screen and (max-width: 1024px) and (min-width: 769px){
+      #footer-top-area-inner .grid .grid-inner {
+    grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+}}
+
+    @media only screen and (max-width: 768px){
         #footer-top-area-inner .grid .grid-inner  {
     grid-template-columns: repeat(1,minmax(0,1fr)) !important;
 }}
@@ -514,10 +565,10 @@ li{
 }}
 
 
-@media only screen and (max-width: 1024px){
+/* @media only screen and (max-width: 1024px){
 .content-grid {
     width: 768px;
-}}
+}} */
 
 @media only screen and (max-width: 1200px){
 .content-grid {
@@ -529,7 +580,7 @@ li{
     max-width: 100%!important;
 }}
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1024px){
 .content-grid {
     width: 86%;
 }}
@@ -919,6 +970,18 @@ svg:not(:root) {
 
 .grid .gutter--normal>.grid-inner {
     gap: 30px;
+}
+
+
+
+/* footer */
+#footer{
+  position: relative;
+}
+
+/* header */
+#header{
+  background-color: #ffffff;
 }
 
 
